@@ -17,7 +17,8 @@ export default {
         'purple': '#6D64D3',
         'toggle': '#252F45',
         'dark-light': "#847798",
-        'bg-light': '#1B2335'
+        'bg-light': '#1B2335',
+        'primary-bg': 'OF172A'
       },
     },
   },
