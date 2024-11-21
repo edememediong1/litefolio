@@ -18,8 +18,28 @@ export default {
         'toggle': '#252F45',
         'dark-light': "#847798",
         'bg-light': '#1B2335',
-        'primary-bg': 'OF172A'
+        'primary-bg': '#0F172A'
       },
+      padding:{
+        'vl': '100px'
+      },
+      width:{
+        'hero-img': '310px'
+      },
+      height:{
+        'hero-img': '350px'
+      },
+      keyframes:{
+        'border-spin': {
+          '100%': {
+            transform: 'rotate(-360deg)'
+          }
+        },
+      },
+      animation: {
+        'border-spin': "border-spin 7s linear infinite"
+      }
+
     },
   },
   plugins: [],
