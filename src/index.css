@@ -35,4 +35,9 @@
         @apply font-jamjuree text-dark-light
     }
 
+    .article{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
 }
