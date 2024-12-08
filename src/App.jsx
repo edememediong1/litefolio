@@ -4,6 +4,7 @@ import Home from "./sections/Home"
 import Services from "./sections/Services"
 import About from "./sections/About"
 import Tools from "./sections/Tools"
+import Projects from "./sections/Projects"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Services/>
       <About/>
       <Tools/>
+      <Projects/>
     </Fragment>
   )
 }
