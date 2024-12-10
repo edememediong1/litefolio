@@ -1,57 +1,56 @@
 import { useState } from "react"
-import {Swiper, SwiperSlide} from 'swiper/react';
-import {Autoplay, Navigation, EffectFade} from 'swiper/modules'
-import profile from "../assets/profile.jpg"
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/effect-fade'
+import Slider from "react-slick"
+import one from "../assets/one.png"
+import two from "../assets/two.png"
+import three from "../assets/three.png"
+import four from "../assets/four.png"
+import five from "../assets/five.png"
+import menu from "../assets/menu-open.png"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
-const cards = [
-  {id: 1, title: "Cardinal Store", description: "A simple ecommerce Site", "src": profile},
-  {id: 2, title: "Intellectual", description: "AI Resume formater using GPT", "src": profile},
-  {id: 3, title: "Tonify", description: "AI cream recommendation App", "src": profile},
-  {id: 4, title: "Horizon AI", description: "Horizon is a movie recommender system using AI", "src": profile},
-  {id: 5, title: "Gym Shepherd", description: "Build your fitness goals with a shepherd", "src": profile},
-  {id: 6, title: "Mentor", description: "Project management tool for developers and founders who want to scale", "src": profile}
-]
 
 function Projects() {
+  const cards = [
+    {id: 1, title: "Cardinal Store", description: "A simple ecommerce Site", "src": one},
+    {id: 2, title: "Intellectual", description: "AI Resume formater using GPT", "src": two},
+    {id: 3, title: "Tonify", description: "AI cream recommendation App", "src": three},
+    {id: 4, title: "Horizon AI", description: "Horizon is a movie recommender system using AI", "src": four},
+    {id: 5, title: "Gym Shepherd", description: "Build your fitness goals with a shepherd", "src": five},
+    {id: 6, title: "Mentor", description: "Project management tool for developers and founders who want to scale", "src": three}
+  ]
 
-  const [hoveredIndex, setHoveredIndex] = useState(null)
+  // const [hoveredIndex, setHoveredIndex] = useState(null)
+
+  const settings = {
+  
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear"
+  };
   
   return(
-    <div className="relative w-full max-w-4xl mx-auto">
-      <Swiper
-        modules={[Autoplay, Navigation, EffectFade]}
-        spaceBetween={50}
-        slidesPerView={3}
-        navigation
-        loop={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false 
-        }}
-        effect="fade"
-        className="w-full h-[500px]"
-        >
-          {cards.map((card, index) => (
-            <SwiperSlide key={index} className="relative">
-              <div 
-                className="relative w-full h-full"
-                onMouseEnter={() => setHoveredIndex(index)}
-                onMouseLeave={() => setHoveredIndex(null)}
-              >
-                <img src={profile} className="w-[200px] h-[200px]" />
-              </div>
-            </SwiperSlide>
-          ))
+    <div className="slider-container h-screen bg-primary-bg flex flex-col justify-center">
+      <Slider {...settings} className="">
+  
+            {cards.map((card, index) =>{
+              return(
+                <div key={index} className=" ">
+                  <div className=" w-[310px] h-[200px] ">
+                    <img src={card.src} className="h-full  w-full" />
+                    <h3 className="bg-bg-light font-jamjuree text-dark-light w-full p-[30px] flex justify-center items-center font-bold">{card.title}</h3>
+                  </div>
+                </div>
+            )})}
 
-          }
-
-        </Swiper>
+      </Slider>
     </div>
   )
-}
 
+}
 export default Projects
