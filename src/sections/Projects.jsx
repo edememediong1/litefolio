@@ -21,7 +21,7 @@ function Projects() {
     {id: 6, title: "Mentor", description: "Project management tool for developers and founders who want to scale", "src": three}
   ]
 
-  // const [hoveredIndex, setHoveredIndex] = useState(null)
+  const [hoveredIndex, setHoveredIndex] = useState(null)
 
   const settings = {
   
@@ -35,21 +35,30 @@ function Projects() {
   };
   
   return(
-    <div className="slider-container h-screen bg-primary-bg flex flex-col justify-center">
-      <Slider {...settings} className="">
-  
-            {cards.map((card, index) =>{
-              return(
-                <div key={index} className=" ">
-                  <div className=" w-[310px] h-[200px] ">
-                    <img src={card.src} className="h-full  w-full" />
-                    <h3 className="bg-bg-light font-jamjuree text-dark-light w-full p-[30px] flex justify-center items-center font-bold">{card.title}</h3>
+    <article className="bg-primary-bg p-10">
+      <p className="text-[55px] font-jamjuree font-bold bg-gradient-to-r from-lemon via-purple to-dark-light bg-clip-text text-transparent">Projects I've Built</p>
+      <div className="slider-container h-screen  flex flex-col justify-center mt-[-50px]">
+        <Slider {...settings} className="">
+    
+              {cards.map((card, index) =>{
+                return(
+                  <div key={index} className="relative " onMouseEnter={()=>setHoveredIndex(index)} onMouseLeave={() => setHoveredIndex(null)}>
+                    <div className=" w-[285px] h-[200px] ">
+                      <img src={card.src} className="h-full  w-full" />
+                      {hoveredIndex === index && (
+                    
+                      <p className="absolute inset-0 bg-primary-bg bg-opacity-80 flex items-center justify-center p-2 text-white text-center text-sm max-w-[285px] font-jamjuree">
+                        {card.description}
+                      </p>
+                           )}
+                      <h3 className="bg-bg-light font-bakbak text-white w-full p-[30px] flex justify-center items-center">{card.title}</h3>
+                    </div>
                   </div>
-                </div>
-            )})}
+              )})}
 
-      </Slider>
-    </div>
+        </Slider>
+      </div>
+    </article>
   )
 
 }
