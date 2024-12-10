@@ -5,7 +5,6 @@ import two from "../assets/two.png"
 import three from "../assets/three.png"
 import four from "../assets/four.png"
 import five from "../assets/five.png"
-import menu from "../assets/menu-open.png"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
