@@ -9,7 +9,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
-
 function Projects() {
   const cards = [
     {id: 1, title: "Cardinal Store", description: "A simple ecommerce Site", "src": one},
