@@ -1,4 +1,6 @@
 import { useState } from "react"
+import down from "../../src/assets/down.svg"
+import up from "../../src/assets/up.svg" 
 
 function Experiences() {
     const [activeIndex, setActiveIndex] = useState(null)
@@ -58,7 +60,7 @@ function Experiences() {
                         <p className="text-[20px] text-[#c2bad2] font-jamjuree">{item.location}</p>
                       </section>
                       <span className="col-span-1  flex justify-center items-center text-xl">
-                          {activeIndex === index ? "-": "+"}
+                          {activeIndex === index ? <img src={up} alt="" /> : <img src={down} alt="" />}
                       </span>
                     </div>
                     {activeIndex === index ? (
