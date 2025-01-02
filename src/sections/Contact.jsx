@@ -68,10 +68,10 @@ function Contact() {
 
 
   return (
-    <div className='flex flex-col items-center justify-center h-[200vh] p-10 w-screen bg-primary-bg'>
+    <div className='flex flex-col items-center justify-center h-[170vh] p-10 w-screen bg-primary-bg'>
         <p className="text-[55px] font-jamjuree font-bold bg-gradient-to-r from-lemon via-purple to-dark-light bg-clip-text text-transparent">Get in touch</p>
         <p className="text-[20px] font-jamjuree text-dark-light mt-[20px] mb-[25px] w-[70%] text-center">With 2 years of experience as a designer and developer, I have worked with many clients worldwide, built numerous frontend, backend, and AI applications, managed various projects, and contributed to Opensource projects</p>
-        <form onSubmit={onSubmit} className="space-y-5 w-[70%] bg-[#1b2335] p-8 rounded-md shadow-md">
+        <form onSubmit={onSubmit} className="space-y-5 w-[70%] bg-[#1f273a] p-8 rounded-md shadow-md">
             <div>
                 <input 
                     type="text" 
@@ -79,7 +79,7 @@ function Contact() {
                     placeholder="Your name" 
                     onChange={handleChange} 
                     value={values.name} 
-                    className={` w-full p-3 rounded-md outline-none bg-primary-bg text-[#c2bad2] font-jamjuree ${errors.name ? "border-red-500" : ""}`}
+                    className={` w-full p-4 rounded-md outline-none bg-primary-bg text-[#c2bad2] font-jamjuree ${errors.name ? "border-red-500" : ""}`}
                 />
                 {errors.name && <p className="text-red-500 text-xs mt-[5px]">{errors.name}</p>}
             </div>
@@ -90,7 +90,7 @@ function Contact() {
                     placeholder="Your email"
                     onChange={handleChange}
                     value={values.email}
-                    className={`w-full p-3 rounded-md outline-none bg-primary-bg text-[#c2bad2] font-jamjuree ${errors.email ? 'border-red-500' : ''}`}
+                    className={`w-full p-4 rounded-md outline-none bg-primary-bg text-[#c2bad2] font-jamjuree ${errors.email ? 'border-red-500' : ''}`}
                 />
                 {errors.email && <p className="text-red-500 text-xs">{errors.email}</p>}
             </div>
@@ -100,7 +100,7 @@ function Contact() {
                 placeholder='Your message'
                 onChange={handleChange}
                 value={values.message}
-                className={`w-full p-3 rounded-md outline-none bg-primary-bg text-[#c2bad2] font-jamjuree ${errors.message ? 'border-red-500' : ""}`}
+                className={`w-full h-[150px] p-3 rounded-md resize-none outline-none bg-primary-bg text-[#c2bad2] font-jamjuree ${errors.message ? 'border-red-500' : ""}`}
                 ></textarea>
                 {errors.message && <p className="text-red-500 text-xs mt-1">{errors.message}</p>}
             </div>
