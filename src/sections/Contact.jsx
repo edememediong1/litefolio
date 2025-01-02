@@ -1,4 +1,4 @@
-import useState from 'react';
+import {useState} from 'react';
 import { sendEmail } from '../utils/emailjs';
 // import { useFormValidation } from '../hooks/useFormValidation';
 
@@ -45,9 +45,9 @@ function Contact() {
         }
     };
 
-    const handleDarkModeChange = (newDarkMode) => {
-        setIsDarkMode(newDarkMode)
-    };
+    // const handleDarkModeChange = (newDarkMode) => {
+    //     setIsDarkMode(newDarkMode)
+    // };
 
     const validate = (values) => {
         let errors = {};
@@ -94,6 +94,20 @@ function Contact() {
                 />
                 {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
             </div>
+            <div>
+                <textarea 
+                name="message"
+                placeholder='Your message'
+                onChange={handleChange}
+                value={values.message}
+                className={`w-full ${errors.message ? 'border-red-500' : ""}`}
+                ></textarea>
+                {errors.message && <p className="text-red-500 text-xs mt-1">{errors.message}</p>}
+            </div>
+            <button type="submit" disabled={isSubmitting} className="w-full">
+                {isSubmitting ? "Sending..." : "Send Message"}
+            </button>
+            {submitStatus && <p className="text-center mt-4">{submitStatus}</p>}
         </form>
     </div>
   )
