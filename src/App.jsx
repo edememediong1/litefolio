@@ -6,6 +6,7 @@ import About from "./sections/About"
 import Tools from "./sections/Tools"
 import Projects from "./sections/Projects"
 import Experiences from "./sections/Experiences"
+import Contact from "./sections/Contact"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Tools/>
       <Projects/>
       <Experiences/>
+      <Contact/>
     </Fragment>
   )
 }
