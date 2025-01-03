@@ -38,12 +38,12 @@ function Contact() {
                 //     message: formRef.current.message.value,
                 //   };
                 await sendEmail(formRef.current);
-                setSubmitStatus("Message sent successfully");
+                setSubmitStatus(() => { return<p className='text-green-600'>Message sent successfully</p>});
                 // Reset the form
                 setValues(INITIAL_STATE);
             } catch (error) {
                 console.error(error)
-                setSubmitStatus("Failed to send message");
+                setSubmitStatus(() => { return<p className='text-red-600'>Failed to send message! Hold on for a sec.</p>});
                 
             } finally {
                 setIsSubmitting(false);
