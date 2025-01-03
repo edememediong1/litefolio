@@ -1,14 +1,14 @@
 import emailjs from "@emailjs/browser";
 
 
-export const sendEmail = (templateParams) => {
+export const sendEmail = (form) => {
    try {
-    emailjs.init(`D9xm9cd9VBmlpU7QLservice_dgbz3al`);
+    emailjs.init(`D9xm9cd9VBmlpU7QL`);
 
     return emailjs.sendForm(
         `service_dgbz3al`,
         `template_ttjp83r`,
-        templateParams)
+        form)
     } catch(error){
         console.log(error)
     }

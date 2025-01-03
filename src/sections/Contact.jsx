@@ -32,12 +32,12 @@ function Contact() {
         if (Object.keys(validationErrors).length === 0) {
             setIsSubmitting(true);
             try {
-                const templateParams = {
-                    from_name: values.name,
-                    from_email: values.email,
-                    message: values.message,
-                  };
-                await sendEmail(templateParams);
+                // const templateParams = {
+                //     from_name: formRef.current.name.value,
+                //     from_email: formRef.current.email.value,
+                //     message: formRef.current.message.value,
+                //   };
+                await sendEmail(formRef.current);
                 setSubmitStatus("Message sent successfully");
                 // Reset the form
                 setValues(INITIAL_STATE);
@@ -77,7 +77,7 @@ function Contact() {
     <div className='flex flex-col items-center justify-center h-[170vh] p-10 w-screen bg-primary-bg'>
         <p className="text-[55px] font-jamjuree font-bold bg-gradient-to-r from-lemon via-purple to-dark-light bg-clip-text text-transparent">Get in touch</p>
         <p className="text-[20px] font-jamjuree text-dark-light mt-[20px] mb-[25px] w-[70%] text-center">With 2 years of experience as a designer and developer, I have worked with many clients worldwide, built numerous frontend, backend, and AI applications, managed various projects, and contributed to Opensource projects</p>
-        <form onSubmit={onSubmit} className="space-y-5 w-[70%] bg-[#1f273a] p-8 rounded-md shadow-md">
+        <form ref={formRef} onSubmit={onSubmit} className="space-y-5 w-[70%] bg-[#1f273a] p-8 rounded-md shadow-md">
             <div>
                 <input 
                     type="text" 
