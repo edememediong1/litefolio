@@ -2,11 +2,11 @@ import profile from "../assets/profile.jpg"
 
 function Home() {
   return (
-    <article className="flex justify-between items-start p-6 bg-primary-bg h-screen pt-vl">
-        <section className="w-[60%] flex flex-col gap-12">
-            <section className="">
-                <p className="font-bold font-jamjuree  text-dark-light" style={{fontSize: '45px'}}>Frontend Engineer +</p>
-                <p className="font-jamjuree bg-gradient-to-r bg-clip-text from-lemon to-purple text-transparent leading-tight" style={{fontSize: '55px', fontWeight: 700}}>Full-stack Developer</p>
+    <article className="home-article flex justify-between items-start p-6 bg-primary-bg h-screen pt-vl">
+        <section className=" section-one w-[60%] flex flex-col gap-12">
+            <section className="first-section">
+                <p className="font-bold font-jamjuree  text-dark-light text-[45px]">Frontend Engineer +</p>
+                <p className=" font-jamjuree bg-gradient-to-r bg-clip-text from-lemon to-purple text-transparent leading-tight" style={{fontSize: '55px', fontWeight: 700}}>Full-stack Developer</p>
             </section>
             <p className="font-jamjuree text-justify text-dark-light " style={{fontSize: '22px'}}>
                 Frontend Engineer using HTML, CSS, Javascript, TypeScript, React and Nextjs. Backend using Node, Express, SQL, Postgres and Prisma. Building robust web, mobile and desktop applications.

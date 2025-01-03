@@ -40,4 +40,79 @@
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
+    @media (min-width: 980px){
+        .home-article{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    @media (max-width: 1000px){
+        .home-article{
+            display: flex;
+            flex-direction: column;
+            @apply gap-10 h-[180vh] justify-center items-center;
+
+        }
+
+        .first-section p:nth-child(1){
+            font-size: 40px;
+        }
+
+        .first-section p:nth-child(2){
+            font-size: 50px;
+        }
+
+        .section-one {
+            @apply w-full pl-3 pr-3;
+        }
+
+    }
+
+    @media (max-width: 768px){
+        .home-article{
+            display: flex;
+            flex-direction: column;
+            @apply gap-10 h-[180vh] justify-center;
+            
+
+        }
+
+        .first-section {
+            @apply w-full 
+        }
+
+        .first-section p:nth-child(1){
+            font-size: 30px;
+        }
+
+        .first-section p:nth-child(2){
+            font-size: 2rem;
+        }
+
+        
+
+        .service-head {
+            font-size: 40px;
+        }
+
+
+        .service-desc {
+            font-size: 18px;
+        }
+
+        .about-cont{
+            display: flex;
+            flex-direction: column;
+            @apply w-full;
+        }
+    }
+
+
+    @media (max-width: 640px){
+        .service-cont{
+            @apply w-full h-[400vh] ;
+        }
+    }
+
 }

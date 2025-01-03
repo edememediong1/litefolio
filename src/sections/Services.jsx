@@ -7,9 +7,9 @@ import leaf from "../assets/bx-leaf.svg"
 
 function Services() {
   return (
-    <div className="bg-primary-bg p-8 pt-[100px]">
-        <p className="text-[55px] font-jamjuree font-bold bg-gradient-to-r from-lemon via-purple to-dark-light bg-clip-text text-transparent ">Services I provide</p>
-        <p className="text-[20px] font-jamjuree text-dark-light mt-[20px]">With 2 years of experience as a designer and developer, I have worked with many clients worldwide, built numerous frontend, backend, and AI applications, managed various projects, and contributed to Opensource projects</p>
+    <div className="service-cont bg-primary-bg p-8 pt-[100px]">
+        <p className=" service-head text-[55px] font-jamjuree font-bold bg-gradient-to-r from-lemon via-purple to-dark-light bg-clip-text text-transparent ">Services I provide</p>
+        <p className="service-desc text-[20px] font-jamjuree text-dark-light mt-[20px]">With 2 years of experience as a designer and developer, I have worked with many clients worldwide, built numerous frontend, backend, and AI applications, managed various projects, and contributed to Opensource projects</p>
         <article className="article gap-4 mt-10">
             <section className="card-wrapper  ">
                 <div className="card-content">

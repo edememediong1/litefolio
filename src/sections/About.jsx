@@ -2,7 +2,7 @@ import profile from "../assets/profile.jpg"
 
 function About() {
   return (
-    <div className="flex  bg-primary-bg h-[140vh] p-10 justify-center items-center">
+    <div className="about-cont flex  bg-primary-bg h-[140vh] p-10 justify-center items-center">
         <section className="w-[80%] text-justify">
             <h className="text-[60px] font-bold font-jamjuree bg-gradient-to-r from-lemon via-dark-light to-purple text-transparent bg-clip-text">About Me</h>
             <div className="text-dark-light font-jamjuree">
