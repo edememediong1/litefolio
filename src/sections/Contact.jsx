@@ -1,5 +1,5 @@
-import {useState} from 'react';
-import { sendEmail } from '../utils/emailjs';
+import {useState, useRef} from 'react';
+import {sendEmail}  from '../utils/emailjs';
 // import { useFormValidation } from '../hooks/useFormValidation';
 
 const INITIAL_STATE = {
@@ -15,7 +15,7 @@ function Contact() {
     // const [isDarkMode, setIsDarkMode] = useState(false);
     const [submitStatus, setSubmitStatus] = useState("")
 
-
+    const formRef = useRef()
 
     const handleChange = (event) => {
         setValues({
@@ -32,13 +32,19 @@ function Contact() {
         if (Object.keys(validationErrors).length === 0) {
             setIsSubmitting(true);
             try {
-                await sendEmail(values);
+                const templateParams = {
+                    from_name: values.name,
+                    from_email: values.email,
+                    message: values.message,
+                  };
+                await sendEmail(templateParams);
                 setSubmitStatus("Message sent successfully");
                 // Reset the form
                 setValues(INITIAL_STATE);
             } catch (error) {
+                console.error(error)
                 setSubmitStatus("Failed to send message");
-                console.log(error)
+                
             } finally {
                 setIsSubmitting(false);
             }
