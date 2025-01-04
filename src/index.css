@@ -87,6 +87,13 @@
 
         }
 
+        .home-img-cont{
+            height: 65vh;
+            align-self: start;
+            margin-bottom: 0px;
+            margin-left: 30px;
+         }
+
         .first-section {
             @apply w-full 
         }
@@ -99,7 +106,17 @@
             font-size: 2rem;
         }
 
-        
+        .about-cont{
+            display: flex;
+            flex-direction: column;
+            @apply w-full p-0 h-[150vh]  justify-start items-center;
+
+        }
+
+        .about-sub {
+            width: 100%;
+            @apply p-8;
+        }
 
         .service-head {
             font-size: 40px;
@@ -120,7 +137,7 @@
 
     @media (max-width: 640px){
         .service-cont{
-            @apply w-full h-[300vh];
+            @apply w-full h-[380vh];
         }
 
         .about-cont{
