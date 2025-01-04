@@ -143,7 +143,7 @@
         .about-cont{
             display: flex;
             flex-direction: column;
-            @apply w-full p-0 h-[150vh]  justify-start items-center;
+            @apply w-full p-0 h-[100vh]  justify-start items-center;
 
         }
 
