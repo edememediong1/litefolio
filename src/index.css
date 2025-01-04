@@ -205,13 +205,14 @@
         .home-article{
             display: flex;
             flex-direction: column;
-            @apply gap-10 h-[180vh] justify-start p-5 items-center;
+            @apply gap-10 h-[180vh] justify-start pt-5 pl-2 pr-2 items-center;
 
         }
 
         .home-img-cont{
            height: 60vh;
            width: 80%;
+           justify-self: start;
         }
 
         .home-desc{
