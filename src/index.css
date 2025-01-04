@@ -205,7 +205,7 @@
         .home-article{
             display: flex;
             flex-direction: column;
-            @apply gap-10 h-[180vh] justify-start pt-5 pl-2 pr-2 items-center;
+            @apply gap-10 h-[140vh] justify-start pt-5 pl-2 pr-2 items-center;
 
         }
 
@@ -213,10 +213,15 @@
            height: 60vh;
            width: 80%;
            justify-self: start;
+           margin-bottom: 0px;
         }
 
         .home-desc{
             font-size: 18px;
+        }
+
+        .home-full {
+            font-size: 33px;
         }
     }
 

@@ -6,7 +6,7 @@ function Home() {
         <section className=" section-one w-[60%] flex flex-col gap-12">
             <section className="first-section">
                 <p className="font-bold font-jamjuree  text-dark-light text-[45px]">Frontend Engineer +</p>
-                <h3 className=" font-jamjuree bg-gradient-to-r bg-clip-text from-lemon to-purple text-transparent leading-tight text-[50px] font-[700]">Full-stack Developer</h3>
+                <h3 className="home-full font-jamjuree bg-gradient-to-r bg-clip-text from-lemon to-purple text-transparent leading-tight text-[50px] font-[700]">Full-stack Developer</h3>
             </section>
             <p className="home-desc font-jamjuree text-justify text-dark-light text-[22px]">
                 Frontend Engineer using HTML, CSS, Javascript, TypeScript, React and Nextjs. Backend using Node, Express, SQL, Postgres and Prisma. Building robust web, mobile and desktop applications.
