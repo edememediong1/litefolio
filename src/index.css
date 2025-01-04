@@ -135,7 +135,11 @@
         }
 
         .about-head {
-            font-size: 40px;
+            font-size: 33px;
+        }
+
+        .about-details p{
+            font-size: 18px;
         }
 
         .tools-cont {
@@ -231,6 +235,16 @@
         .service-head{
             font-size: 33px;
         }
+    }
+
+    @media (max-width: 376px){
+
+        .home-img-cont{
+            height: 60vh;
+            justify-self: start;
+            margin-bottom: 0px;
+         }
+        
     }
 
 }
