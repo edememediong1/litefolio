@@ -1,7 +1,7 @@
 import dark from "../../assets/dark.svg"
 import ToggleMenu from "./ToggleMenu"
 
-function Navbar() {
+function Navbar(){
   return (
     <div className="flex justify-between items-center h-20 p-6 bg-bg-light">
       <section className="flex justify-between items-center gap-4">
