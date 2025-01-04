@@ -215,7 +215,7 @@
 
         .home-img-cont{
            height: 70vh;
-           width: 70%;
+           width: 90%;
            justify-self: start;
            margin-bottom: 0px;
         }
@@ -237,7 +237,7 @@
         }
     }
 
-    @media (max-width: 376px){
+    @media (max-width: 480px){
 
         .home-img-cont{
             height: 60vh;
