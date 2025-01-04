@@ -3,7 +3,7 @@ import profile from "../assets/profile.jpg"
 function About() {
   return (
     <div className="about-cont flex  bg-primary-bg h-[140vh] p-10 justify-center items-center">
-        <section className="w-[80%] text-justify">
+        <section className="about-sub w-[80%] text-justify">
             <h className="about-head text-[60px] font-bold font-jamjuree bg-gradient-to-r from-lemon via-dark-light to-purple text-transparent bg-clip-text">About Me</h>
             <div className="about-details text-dark-light font-jamjuree">
                 <p className="text-[20px] mb-[20px]">I began my development journey in 2017, focusing on design, branding, UX/UI, and WordPress. This led to founding my own design and development agency in 2018</p>

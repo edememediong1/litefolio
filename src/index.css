@@ -235,6 +235,8 @@
         .service-head{
             font-size: 33px;
         }
+
+        
     }
 
     @media (max-width: 480px){
@@ -243,6 +245,11 @@
             height: 60vh;
             justify-self: start;
             margin-bottom: 0px;
+         }
+
+         .about-sub {
+            width: 100%;
+            @apply p-5;
          }
         
     }
