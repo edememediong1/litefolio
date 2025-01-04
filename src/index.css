@@ -137,7 +137,7 @@
 
     @media (max-width: 640px){
         .service-cont{
-            @apply w-full h-[380vh];
+            @apply w-full h-[300vh];
         }
 
         .about-cont{
