@@ -10,7 +10,7 @@ import Contact from "./sections/Contact"
 
 function App() {
   return (
-    <Fragment>
+    <div className="w-screen h-full bg-primary-bg">
       <Navbar/>
       <Home/>
       <Services/>
@@ -19,7 +19,7 @@ function App() {
       <Projects/>
       <Experiences/>
       <Contact/>
-    </Fragment>
+    </div>
   )
 }
 

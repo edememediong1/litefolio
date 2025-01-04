@@ -6,15 +6,15 @@ function Navbar() {
     <div className="flex justify-between items-center h-20 p-6 bg-bg-light">
       <section className="flex justify-between items-center gap-4">
         <ToggleMenu />
-        <p className="font-bakbak text-logo bg-gradient-to-r from-lemon to-purple bg-clip-text text-transparent">
+        <p className="logo-text text-logo bg-gradient-to-r from-lemon to-purple bg-clip-text text-transparent">
           &#123; EmediongEdem &#125;
         </p>
       </section>
       <section className="flex justify-center items-center gap-4">
-        <p className="w-11 h-11 bg-toggle font-jamjuree flex justify-center items-center rounded-md text-dark-light ">
+        <p className="logo-en w-11 h-11 bg-toggle font-jamjuree flex justify-center items-center rounded-md text-dark-light ">
           EN
         </p>
-        <div className="w-11 h-11 bg-toggle font-jamjuree flex justify-center items-center rounded-md text-dark-light ">
+        <div className="logo-dark w-11 h-11 bg-toggle font-jamjuree flex justify-center items-center rounded-md text-dark-light ">
           <img src={dark} />
         </div>
         <p className="w-auto px-2 h-11 bg-toggle font-jamjuree flex justify-center items-center rounded-md text-dark-light">
