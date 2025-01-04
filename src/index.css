@@ -175,7 +175,7 @@
         }
 
         .logo-text{
-            font-size: 25x;
+            font-size: 20px;
             font-weight: 700;
         }
 
@@ -202,6 +202,21 @@
             display: none;
         }
 
+        .home-article{
+            display: flex;
+            flex-direction: column;
+            @apply gap-10 h-[180vh] justify-start p-5 items-center;
+
+        }
+
+        .home-img-cont{
+           height: 60vh;
+           width: 80%;
+        }
+
+        .home-desc{
+            font-size: 18px;
+        }
     }
 
 }
