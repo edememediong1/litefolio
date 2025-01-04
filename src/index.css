@@ -137,7 +137,7 @@
 
     @media (max-width: 640px){
         .service-cont{
-            @apply w-full;
+            @apply w-full mb-[4rem];
         }
 
         .about-cont{
