@@ -11,7 +11,7 @@ function Tools() {
   return (
     <div className="tools-cont h-screen  bg-primary-bg p-10">
         <h2 className="tools-head text-[3.5rem] font-[700] font-jamjuree bg-gradient-to-r from-lemon via-dark-light to-purple bg-clip-text text-transparent">Tools I have used</h2>
-        <p className="text-[1.25rem] font-jamjuree text-dark-light mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita alias possimus odio odit tempora assumenda quibusdam laboriosam sint sunt obcaecati doloribus, quo neque nulla quam quos fuga doloremque enim facere.</p>
+        <p className="tools-text text-[1.25rem] font-jamjuree text-dark-light mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita alias possimus odio odit tempora assumenda quibusdam laboriosam sint sunt obcaecati doloribus, quo neque nulla quam quos fuga doloremque enim facere.</p>
         <article className="tools-item flex justify-between items-center h-[70%]">
             <section className="tool-one w-[50%] flex justify-start items-center">
                 <p className="text-[2rem] font-jamjuree font-bold -rotate-90 text-white">Languages</p>
