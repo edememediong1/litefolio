@@ -109,7 +109,7 @@
         .about-cont{
             display: flex;
             flex-direction: column;
-            @apply w-full p-0 h-[150vh]  justify-start items-center;
+            @apply w-full p-0 h-[100vh] mb-[8em] justify-start items-center;
 
         }
 
@@ -137,10 +137,14 @@
             font-size: 33px;
         }
 
+        .about-details {
+            font-size: 18px;
+        }
+
 
         .tools-cont {
 
-            @apply w-full h-[150vh] p-8;
+            @apply w-full h-[100vh] p-8;
 
         }
 
@@ -184,7 +188,9 @@
 
         .tool-two p{
             @apply rotate-0;
-        }   
+        }
+        
+        
     }
 
 
@@ -320,6 +326,10 @@
          .about-sub {
             width: 100%;
             @apply p-5;
+         }
+
+         .about-cont {
+            @apply mb-[8rem];
          }
         
     }
