@@ -132,6 +132,21 @@
             flex-direction: column;
             @apply w-full;
         }
+
+        .about-head {
+            font-size: 33px;
+        }
+
+
+        .tools-cont {
+
+            @apply w-full h-[150vh] p-8;
+
+        }
+
+        .tools-head {
+            font-size: 35px;
+        }
     }
 
 
