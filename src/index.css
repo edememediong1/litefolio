@@ -144,12 +144,12 @@
 
         .tools-cont {
 
-            @apply w-full h-[100vh] p-8;
+            @apply w-full p-5;
 
         }
 
         .tools-head {
-            font-size: 35px;
+            font-size: 33px;
         }
 
         .tools-text {
@@ -202,7 +202,7 @@
         .about-cont{
             display: flex;
             flex-direction: column;
-            @apply w-full p-0 h-[80vh]  justify-start items-center;
+            @apply w-full p-0 h-[100vh]  justify-start items-center;
 
         }
 
@@ -220,7 +220,7 @@
 
         .tools-cont {
 
-            @apply w-full h-[150vh] ;
+            @apply w-full h-[120vh] ;
 
         }
 
