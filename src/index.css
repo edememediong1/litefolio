@@ -334,11 +334,12 @@
         
 
          .tools-cont {
-
             @apply  w-full p-5 h-[70vh] mb-[8rem];
-
-
         }
+
+        
+
+
     }
 
 }

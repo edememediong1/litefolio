@@ -24,7 +24,7 @@ function Projects() {
   const settings = {
   
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
@@ -33,8 +33,8 @@ function Projects() {
   };
   
   return(
-    <article className="bg-primary-bg p-10">
-      <p className="text-[55px] font-jamjuree font-bold bg-gradient-to-r from-lemon via-purple to-dark-light bg-clip-text text-transparent">Projects I&apos;ve Built</p>
+    <article className="project-cont bg-primary-bg p-10">
+      <p className="project-head text-[55px] font-jamjuree font-bold bg-gradient-to-r from-lemon via-purple to-dark-light bg-clip-text text-transparent">Projects I&apos;ve Built</p>
       <div className="slider-container h-screen  flex flex-col justify-center mt-[-50px]">
         <Slider {...settings} className="">
     
