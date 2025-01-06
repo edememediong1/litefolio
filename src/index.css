@@ -144,7 +144,7 @@
 
         .tools-cont {
 
-            @apply w-full p-5 h-[60vh];
+            @apply w-full p-5;
 
         }
 
@@ -332,6 +332,13 @@
             @apply mb-[8rem];
          }
         
+
+         .tools-cont {
+
+            @apply  w-full p-5 h-[70vh] mb-[8rem];
+
+
+        }
     }
 
 }
