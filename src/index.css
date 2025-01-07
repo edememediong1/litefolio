@@ -312,6 +312,14 @@
             font-size: 33px;
         }
 
+        .project-head {
+            font-size: 33px;
+            padding: 2rem;
+        
+        }
+
+        .
+
         
     }
 
@@ -337,7 +345,9 @@
             @apply  w-full p-5 h-[70vh] mb-[8rem];
         }
 
-        
+
+
+
 
 
     }
